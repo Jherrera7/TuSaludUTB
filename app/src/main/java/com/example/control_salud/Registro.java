@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+//import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+//import android.widget.EditText;
 import android.widget.ImageView;
 
 public class Registro extends AppCompatActivity {
@@ -15,6 +17,18 @@ public class Registro extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
+
+    /*public void Enterokay (View v) {
+        EditText edtUser = findViewById(R.id.edtUser);
+        Log.d("datos", edtUser.getText().toString());
+
+        EditText edtPass = findViewById(R.id.edtPass);
+        Log.d("datos", edtPass.getText().toString());
+
+        Intent registrarse = new Intent(getApplicationContext(), Registrarse.class);
+        startActivity(registrarse);*/
+
+
         reg=(Button) findViewById(R.id.registrarse);
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -23,6 +37,7 @@ public class Registro extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
 
         Salir = (ImageView) findViewById(R.id.Salir);
         Salir.setOnClickListener(new View.OnClickListener() {
