@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondocuatro"
+    tools:context=".Rgistrofisico">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:id="@+id/idLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logoapp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:text="Registro fisico"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/Edad"
+            android:background="@drawable/bordesbutton"
+            android:layout_gravity="center"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:hint="Edad"
+            android:textColorHint="#000000"/>
+        <EditText
+            android:layout_marginTop="7dp"
+            android:id="@+id/Peso"
+            android:background="@drawable/bordesbutton"
+            android:layout_gravity="center"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:hint="Peso"
+            android:textColorHint="#000000"/>
+        <EditText
+            android:layout_marginTop="7dp"
+            android:id="@+id/Estatura"
+            android:background="@drawable/bordesbutton"
+            android:layout_gravity="center"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:hint="Estatura"
+            android:textColorHint="#000000"/>
+        <EditText
+            android:layout_marginTop="7dp"
+            android:id="@+id/Enfermedad"
+            android:background="@drawable/bordesbutton"
+            android:layout_gravity="center"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:hint="Sufres de alguna enfermedad?"
+            android:textColorHint="#000000"/>
+
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="Aceptas los terminos y condiciones? "
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/No"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/botonselect"
+            android:text="No"
+            android:textColor="#ffffff" />
+        <Button
+            android:id="@+id/Si"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/botonselect"
+            android:text="Si Acepto"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/Salir"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/salir" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

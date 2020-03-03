@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".Registrarse">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="343dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/idLogo"
+            android:layout_width="200dp"
+            android:layout_height="129dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/logoapp" />
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/loginredessociales"/>
+
+        <EditText
+            android:id="@+id/edtUser"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/botonbordes"
+            android:hint="Usuario"
+            android:textColor="#fff"
+            android:textColorHint="#ffffff" />
+
+        <EditText
+            android:id="@+id/edtPass"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/botonbordes"
+            android:hint="********"
+            android:inputType="textPassword"
+            android:textColor="#fff"
+            android:textColorHint="#ffffff" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/botonselect"
+            android:text="Iniciar Sesión"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/registrarse"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/botonselect"
+            android:text="Registrarse"
+            android:textColor="#ffffff" />
+        <ImageView
+            android:layout_marginTop="1dp"
+            android:id="@+id/Salir"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/salir" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
